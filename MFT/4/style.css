@@ -1,0 +1,10 @@
+mark{
+    background-color:antiquewhite;
+    color:rgb(183, 66, 219);
+}
+body{
+    /* background-color:hsl(44, 5%, 58%); */
+    /* background-color: rgba(122, 22, 222, 0.5); */
+    background-color: hsla(300,5%,58%,1);
+    color:black;
+}

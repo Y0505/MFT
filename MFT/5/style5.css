@@ -1,0 +1,53 @@
+body {
+    font-size: 14pt;
+    background-color: rgb(114, 108, 108);
+}
+
+
+h6 {
+    font-size: 14pt;
+    color: rgb(109, 46, 46);
+    background-color: rgb(114, 108, 108);
+    text-align: center;
+
+}
+
+.greencolor{
+    color: rgb(40, 105, 40);
+}
+
+.goldenrod{
+    color: goldenrod;
+}
+
+/* #myid6{
+    font-weight: normal;
+} */
+
+.text-xl{
+    font-size: 26pt;
+    font-family: tahoma;
+}
+.rtl{
+    direction: rtl;
+}
+
+img{
+    width: 55%;
+    /* width: 250px; */
+    /* height: 300px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
