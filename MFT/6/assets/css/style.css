@@ -1,0 +1,46 @@
+body{
+    background-color: royalblue;
+}
+
+.p-settings{
+    color: rgb(8, 22, 100);
+    /*     size  type  color */
+    /* border: 2px solid rgb(73, 30, 30); */
+    /* border: 2px dotted;
+    border-color: rgb(73, 30, 30); */
+    border-left: 5px solid green;
+    border-right: 5px solid rebeccapurple;
+    display: inline;
+    height: 291px;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size: 12px;
+}
+.menu > li{
+    display: inline;
+}
+
+.border{
+    width: 100%;
+    font-size: 25px;
+    border: 1px solid black;
+    border-collapse: collapse; /*table style*/
+}
+
+
+.border th{
+    height: 80px;
+}
+
+.border td,th{
+    border: 1px solid black;
+    /* border-width: 20px; */
+    text-align: center;
+
+}
+
+/* .border th{
+    border: 1px solid black;
+} */
