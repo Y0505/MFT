@@ -1,0 +1,31 @@
+.mx-auto{
+    margin: 0px auto;
+} 
+
+.container-md{
+    width: 190px;
+
+}
+
+.container-md form input{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px 0px;
+    border-radius: 5px;
+    
+}
+
+.bg-primary{
+    background-color: rgb(172, 106, 9);
+    border-radius: 5px;
+}
+
+.p-20px{
+    padding: 20px;
+}
+
+.container-md form input label{
+    display: block;
+    text-align: center;
+}

@@ -1,0 +1,75 @@
+body{
+    background-color: darkslategray;
+}
+ .box{
+    width: 200px;
+    height: 200px ;
+    /* display: inline-block; */
+    /* float: left;
+    clear: both; */
+}
+
+.bg-green{
+    background-color: rgb(5, 99, 36);
+}
+.bg-red{
+    background-color: rgb(104, 6, 43);
+}
+.bg-white{
+    background-color: whitesmoke !important;
+}
+.p-20{
+    padding: 20px;
+}
+.pr-20{
+    padding-right: 20px;
+}
+
+.pl-10{
+    padding-left: 10px;
+}
+
+.button{
+    background-color: aqua;
+    display: inline ;
+    padding: 20px 20px ;
+    color: black;
+    border-radius: 10px 50px 20px 0px;
+    cursor: wait;
+}
+
+.mb-10 {
+    /* margin: top right bottom left */
+    /* margin: top/bottom right/left */
+
+    margin-bottom: 10px;
+} 
+
+.mx-auto{
+    margin: 0px auto; /*chera ro train set nashod*/
+}
+
+
+.train-head{
+    background-color: rgb(82, 53, 0);
+    display: inline ;
+    padding: 20px 20px ;
+    border-radius: 10px 50px 20px 0px;
+    cursor: wait;
+    
+}
+.train-body{
+    background-color: rgb(82, 53, 0);
+    display: inline ;
+    padding: 20px 200px ;
+    cursor: wait;
+    
+}
+.train-end{
+    background-color: rgb(82, 53, 0);
+    display: inline ;
+    padding: 20px 20px ;
+    border-radius: 60px 10px 0px 0px;
+    cursor: wait;
+    
+}

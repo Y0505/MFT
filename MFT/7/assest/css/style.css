@@ -1,0 +1,17 @@
+/* p {
+    color: rebeccapurple;
+} */
+
+.a1{
+    display: inline-block;
+    width: 65%;
+    height: 500px;
+    background-color:aqua;
+}
+
+.a2{
+    display: inline-block;
+    width: 15%;
+    height: 600px;
+    background-color:rgb(172, 123, 127);
+}
