@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        :root{
+            --primari-color: rgba(255, 0, 255, 0.2);
+        }
+        .box1{
+            background-color: aquamarine;
+            /* border: 10px solid rgba(255, 0, 255, 0.2); */
+            outline: 10px solid rgba(255, 0, 255, 0.2); /*  اوت لاین به حریم باکس زیر تجاوز میکند*/
+            outline-offset: 10px;
+            border-radius: 10px;
+            border-radius: 50%;
+            padding: 30px;
+            background-clip: padding-box;
+        }
+
+        .box2{
+            background-color: brown;
+        }
+
+        .box3{
+            background-color: rgb(37, 22, 121);
+            background-clip: border-box;
+            padding: 30px;
+            border: 10px solid transparent;
+
+        }
+
+        body{
+            background-color: rgb(83, 79, 79);
+        }
+
+        .hasshadow{ /*مثبت بالا/منفی پایین*/
+            color: transparent;
+            text-shadow: 10px 1px 0px rgb(0, 255, 106), 0px 10px 0px red, 0px 0px 0px black; 
+               /* محو شوندگی بالاپایین چپراست  */
+        }
+        .hasboxshadow{ 
+            color: transparent;
+            box-shadow: 10px 1px 40px 0px rgb(0, 255, 106), 0px 10px 0px red, 0px 0px 0px black; 
+               
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+
+    <div class="box box1 hasboxshadow"></div>
+
+    <p class="hasshadow">slam</p>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+
+</body>
+</html>
