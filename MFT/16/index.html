@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: rgb(83, 79, 79);
+        }
+
+
+        .div1{
+            width: 100px;
+            background-color: aqua;
+            height: 100px;
+        }
+
+        .div2{
+            width: 100px;
+            background-color: blueviolet;
+            height: 100px;
+
+        }
+
+        .dropdown ul{
+            display: none;
+        }
+        li{
+            padding: 10px;
+        }
+        .dropdown:hover ul{
+            display: initial;
+        }
+        .subdropdown ul{
+            display: none !important;
+        }
+        .subdropdown:hover ul{
+            display: initial !important;
+        }
+    </style>
+
+</head>
+<body>
+
+    <ul>
+        <li class="dropdown">
+            Item1
+            <ul>
+                <li class="subdropdown">
+                    sub1
+                    <ul>
+                        <li>hi</li>
+                        <li>hi</li>
+                        <li>hi</li>
+                    </ul>
+                </li>
+
+                <li>sub2</li>
+                <li>sub3</li>
+            </ul>
+        </li>
+        <li>
+            Item2
+        </li>
+        <li>
+            Item3
+        </li>
+    </ul>
+
+</body>
+</html>

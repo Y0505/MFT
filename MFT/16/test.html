@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: rgb(83, 79, 79);
+        }
+        .dropdown ul{
+            display: none;
+        }
+        ul{
+            display: inline-block;
+            position: relative;
+            bottom: 10px;
+        }
+        li{
+            display: block;
+            bottom: 10px;
+        }
+        .dropdown:hover ul{
+            display: initial;
+        }
+
+        .pos li{
+            position: absolute;
+            top: 100px;
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <ul>
+        <li >
+            Item1
+
+        </li>
+    </ul>
+    <ul class="dropdown">
+        <li>Item2
+            <ul class="pos">
+                <li>sub1</li>
+                <li>sub2</li>
+                <li>sub3</li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li>Item3
+        </li>
+    </ul>
+
+</body>
+</html>
