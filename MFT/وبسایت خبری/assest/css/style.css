@@ -1,0 +1,69 @@
+:root{
+    --primery-color: rgb(63, 199, 142);
+    --sec-color: rgb(7, 105, 64);
+    --shadow: 0px 0px 2px 0px rgb(90, 82, 105);
+    font-size: 14px;
+    font-family: "Vazirmatn";
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "Vazirmatn";
+    src: 
+    local("Vazirmatn"),
+    url("/assest/font/Vazirmatn-Light.woff2"), 
+    format("woff2");
+    font-weight: Light;
+} 
+
+.navigation{
+    width: 100vw;
+    height: 30px;
+    display: flex;
+}
+.left-navigation{
+    width: 50%;
+    height: inherit;
+    display: flex;
+
+}
+.right-navigation{
+    width: 50%;
+    height: inherit;
+    direction: rtl;
+    display: flex;
+    justify-content: space-around;
+}
+.right-navigation .menu{
+    display: flex;
+    text-decoration: none;
+    opacity: 0.5;
+    color: black;
+}
+.menu:hover{
+    opacity: 1;
+}
+.logo{
+    display: flex;
+}
+
+.button-left {
+    display: flex;
+    background-color: var(--primery-color);
+    box-shadow: var(--shadow);
+    border: unset;
+    margin-left: 10px;
+    border-radius: 20px 20px;
+    padding: 5px 5px;
+    text-align: center;
+    font-family: "Vazirmatn";
+    direction: rtl;
+}
+
+.button-left:hover{
+    background-color: var(--sec-color);
+}
