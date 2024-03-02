@@ -1,0 +1,8 @@
+@mixin button-design($bgcolor , $color , $width){
+    width: $width;
+    background-color: $bgcolor;
+    box-shadow: 0px 0px 5px $bgcolor;
+    color: $color;
+    border: 2px solid $color;
+    transition: all 1.5s ease-in;
+}
