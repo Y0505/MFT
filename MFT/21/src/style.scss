@@ -1,0 +1,41 @@
+@import "partials/primery-navbar.scss";
+@import "partials/topbar.scss";
+
+.profile-container {
+    width: 663px;
+    height: 600px;
+    margin: auto;
+    border: 2px solid gray;
+    position: relative;
+    .topbar{
+        height: 50px;
+        background-color: palevioletred;
+        background-image: linear-gradient(yellow,red , green , blue);
+
+    }
+    // .infomation{
+    //     height: 70px;
+    //     background-color: peru;
+    // }
+    // .bio-section{
+    //     height: 70px;
+    //     background-color: rgb(116, 83, 50);
+    // }
+    // .adv-section{
+    //     height: 70px;
+    //     background-color: rgb(75, 205, 63);
+    // }
+    // .action-section{
+    //     height: 70px;
+    //     background-color: rgb(111, 139, 230);
+    // }
+    // .highlight-section{
+    //     height: 70px;
+    //     background-color: rgb(153, 82, 15);
+    // }
+    // .post{
+    //     height: 70px;
+    //     background-color: rgb(170, 132, 93);
+    // }
+
+}
