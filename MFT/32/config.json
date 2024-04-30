@@ -1,0 +1,27 @@
+{
+    "database":{
+        "dbName":"mydatabase",
+        "dbUsername":"clinet",
+        "dbPassword":"4a#54fv$",
+        "dbHost":"local"
+    },
+    "users":{
+        "user name":{
+            "username":"impoos",
+            "permission":[
+            ],
+            "avatar":"candy",
+            "books":[
+                "book",
+                "book",
+                "book",
+                "book",
+                "book",
+                "book",
+                "book",
+                "book",
+                "book"
+            ]
+        }
+    }
+}
