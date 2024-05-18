@@ -46,11 +46,60 @@
 //     }
 // });
 
-let inputform = document.querySelector('#inputform');
-let inputname = document.querySelector('input[name=inputname]');
-let output = document.querySelector('#output');
 
-inputform.onsubmit = function(e){
+function $(selector){
+    let classes = selector.split(' ');
+    if (classes[classes.length - 1][0] == '#'){
+        return document.querySelector(selector);
+    }
+    return document.querySelectorAll(selector);
+}
+
+let output = $('#output');
+let inputs = $('input');
+
+
+$('#inputform').onsubmit = function(e){
     e.preventDefault();
     output.style.backgrounColor = 'green';
 }
+inputs.forEach(function(input){
+    inputs.addEventListener('keyup',function(){
+        $('#' + input.name + 'Output').textContent = this.value
+    })
+});
+
+
+// ساخت پاراگراف
+let newParagraph = document.createElement('p');
+newParagraph.innerText = 'New Paragraph';
+newParagraph.style.backgroundColore = 'red';
+newParagraph.id = 'newParagraph';
+output.appendChild(newParagraph);
+setTimeout(() => {document.removeChild(newParagraph)}, 5000);
+dump(newParagraph)
+
+// ساخت پاراگراف
+let newParagraph2 = document.createElement('p');
+newParagraph2.innerText = 'New Paragraph2';
+newParagraph2.style.backgroundColore = 'blue';
+newParagraph2.id = 'newParagraph2';
+setTimeout(() => {output.replaceChild(newParagraph2,newParagraph)}, 5000);
+dump(newParagraph2)
+// // // // // // // //
+dump(newParagraph2.parentNode);
+dump(newParagraph2.firstChild);
+dump(newParagraph2.lastChild);
+dump(newParagraph2.childNodes);
+dump(newParagraph2.previousSibling);
+dump(newParagraph2.nextSibling);
+// // // // // // // //
+let paraph = document.createElement('p');
+// paraph.innerText = 'dddddddd';
+let textNode = document.createTextNode('dddddddd');
+paraph.appendChild(textNode)
+dump(paraph.innerText)
+// // // // // // // // // //
+dump(newParagraph2.remove())
+
+
