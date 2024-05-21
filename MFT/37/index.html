@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: slategrey;">
+
+    <div>
+        
+    </div>
+    <script src="/jquery.js"></script>
+    <script>
+        // مخصوص زمانی که میخایم صفحه کامل لود بشه بعد کد ها اجرا بشه
+        // console.log('before event')
+        // document.addEventListener('DOMContentLoaded',function(){
+        //     console.log('after load')
+        //     $('body').text('ssss');
+        // })
+        // console.log('after event')
+
+        // $(document).ready(function(){
+        //     $('body').text('ssss');
+
+        // })
+
+        // function callback(text){
+        //     console.log(text);
+        // }
+
+        // ObjectSet = {
+        //     document:null,
+        //     setdouc: function(doc){
+        //         this.document = doc;
+        //     },
+        // }
+        // console.log(callback(11));
+        // ObjectReady = {
+        //     READYdocument:null,
+        //     SetReady: callback(){
+        //         $(document).ready(function(){
+        //             READYdocument = $('body').text('ssss');
+        //         })
+        //         console.log('Hello')
+        //     },
+        // }
+
+
+        // ObjectSet = {
+        //     ready : function(callback){
+        //         document.addEventListener('DOMContentLoaded',callback)
+        //     }
+        // }
+
+
+        // console.log(ObjectSet);
+
+        // let con = document.createElement('div')
+        // con.style.display = flex;
+        // con.style.width = '80px';
+        // con.style.height = '20px';
+        // con.style.backgroundColor = 'red';
+
+        // let s = document.createTextNode('input')
+        // con.appendChild(s)
+
+
+function crText (text,con){
+    con.appendChild(document.createTextNode(text));
+}
+
+//#region numbers
+const con = document.createElement("div")
+con.style.display = 'flex';
+con.style.width = '370px';
+con.style.height = '100px';
+con.style.borderRadius = '20px';
+con.style.backgroundColor = 'gray';
+document.body.appendChild(con);
+
+const con1 = document.createElement("div")
+con1.style.display = 'inline-flex';
+con1.style.alignItems = 'center';
+con1.style.justifyContent = 'center';
+con1.style.color = 'white';
+con1.style.fontSize = '22pt';
+con1.style.width = '100px';
+con1.style.height = '100px';
+con1.style.borderRadius = '50px';
+con1.style.backgroundColor = 'black';
+document.body.appendChild(con1);
+crText (1,con1)
+
+
+const con2 = document.createElement("div")
+con2.style.display = 'inline-flex';
+con2.style.width = '100px';
+con2.style.height = '100px';
+con2.style.alignItems = 'center';
+con2.style.justifyContent = 'center';
+con2.style.color = 'white';
+con2.style.fontSize = '22pt';
+con2.style.marginTop = '100px';
+con2.style.marginLeft = '30px';
+con2.style.borderRadius = '50px';
+con2.style.backgroundColor = 'black';
+document.body.appendChild(con2);
+crText (2,con2)
+
+
+const con3 = document.createElement("div")
+con3.style.display = 'inline-flex';
+con3.style.width = '100px';
+con3.style.height = '100px';
+con3.style.alignItems = 'center';
+con3.style.justifyContent = 'center';
+con3.style.color = 'white';
+con3.style.fontSize = '22pt';
+con3.style.marginTop = '100px';
+con3.style.marginLeft = '30px';
+con3.style.borderRadius = '50px';
+con3.style.backgroundColor = 'black';
+document.body.appendChild(con3);
+crText (3,con3)
+
+
+//#endregion 
+    </script>
+</body>
+</html>
