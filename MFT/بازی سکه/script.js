@@ -1,4 +1,9 @@
 let crcle = document.querySelector('.crcle');
+let showNumber = document.querySelector('.showNumber');
+let bottom = document.querySelector('.bottom');
+let aboueText = document.querySelector('.aboueText');
+let BoosterText = document.querySelector('.BoosterText');
+
 let showNumbercount = document.querySelector('.showNumbercount');
 let showEnrgycount = document.querySelector('.showEnrgycount');
 let enrgy = 2000;
@@ -27,3 +32,26 @@ let testInterval = setInterval(function(){
         showEnrgycount.innerHTML = enrgy
     }
 }, 1000)
+
+function aboue(){
+    crcle.style.display = "none";
+    showNumber.style.display = "none";
+    bottom.style.display = "none";
+    aboueText.style.display = "flex";
+    BoosterText.style.display = "none";
+}
+function Game(){
+    crcle.style.display = "flex";
+    showNumber.style.display = "flex";
+    bottom.style.display = "flex";
+    aboueText.style.display = "none";
+    BoosterText.style.display = "none";
+
+}
+function Booster(){
+    crcle.style.display = "none";
+    showNumber.style.display = "none";
+    bottom.style.display = "none";
+    aboueText.style.display = "none";
+    BoosterText.style.display = "flex";
+}
