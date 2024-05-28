@@ -64,17 +64,37 @@ body{
     flex-direction: row;
     justify-content: center;
 }
+.aboueText{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin-top:-180px;
+    padding: 10px;
+}
+
+.BoosterText{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(146, 255, 103);
+    margin-top:-180px;
+    padding: 10px;
+    
+}
 
 .footer{
-    margin-bottom: -150px;
+    margin-bottom: -370px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    position: absolute;
 }
 
 .item{
     margin: 10px 2px;
-    padding: 38px;
+    padding: 20px;
+    font-weight: bold;
     background-color: rgb(153, 153, 153);
     border-radius: 30px;
 }
