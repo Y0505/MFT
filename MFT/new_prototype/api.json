@@ -1,0 +1,14 @@
+{
+    "products":[
+        {
+            "title":"sample1",
+            "image":"/assets/image/pic4",
+            "link":"https://skaockosc.co"
+        },
+        {
+            "title":"sample2",
+            "image":"/assets/image/pic45",
+            "link":"https://skaockosc.co"
+        }
+    ]
+}

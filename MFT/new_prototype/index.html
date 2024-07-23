@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .con{
+            display: flex;
+            height: 100vh;
+        }
+        #userInput{
+            background-color: gray;
+            flex-basis: 100px;
+            flex-grow: 1;
+
+        }
+        #userOutput{
+            background-color: black;
+            flex-grow: 1;
+            flex-basis: 100px;
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="con">
+        <div id="userInput">
+            <input type="text" name="url" pattern="">
+            <select name="method">
+                <option value="GET">GET</option>
+                <option value="POST">POST</option>
+                <option value="PUT">PUT</option>
+                <option value="DELETE">DELETE</option>
+                <option value="OPTION">OPTION</option>
+            </select>
+            <button onclick="callAjax()">send Ajax</button>
+        </div>
+        <div id="userOutput">
+
+        </div>
+    </div>
+    <script src="JQuery.js"></script>
+    <script>
+        let userInput = $('#userInput');
+        let url = $('input[name=url]',userInput);
+        let method = $('select',userInput);
+        let button = $('button',userInput);
+        let userOutput = $('#userOutput');
+
+        // console.log(method);
+        // method.on('change',function(){
+        //     console.log($(this).val());
+        // })
+
+
+        // function callAjax(){
+        //     const ajax = new XMLHttpRequest();
+        //     ajax.onload=function(){
+        //         // let response = JSON.parse(this.responseText);
+        //         // response.products.forEach(function(item){
+        //         //     console.log(item.title);
+        //         // })
+        //         // console.log('AJAX complted');
+        //         if (this.status != 200){
+        //             let e = `<p style="color:red">ERROR !!!</p>`
+        //             userOutput.html(e)
+        //             return;
+        //         }
+        //         userOutput.text(this.responseText);
+
+        //     }
+        //     // ajax.onerror = function(){
+        //     //     let e = `
+        //     //     <p style="color:red">ERROR !!!</p>
+        //     //     `
+        //     //     userOutput.html(e)
+        //     // }
+        //     ajax.open(method.val(),url.val());
+        //     ajax.send();
+        //     console.log(ajax);
+        // }
+
+
+        function callAjax(){
+            $.ajax(url.val(),{
+                method:method.val()
+            }).then(function(response){
+                console.log(response)
+            }).catch(function(){
+                console.log('ERROR')
+            })
+
+        }
+        // button.on('click',function(){
+        //     callAjax();
+        // })
+        button.on('click',()=>callAjax())
+    </script>
+</body>
+</html>
